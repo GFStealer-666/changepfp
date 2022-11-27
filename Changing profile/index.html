@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neucha&family=PT+Sans&family=Shadows+Into+Light&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script type="text/javascript" src="mainpage.js"></script>
+    
+
+</head>
+<body>
+    <div class ="main-container" id="main-container">
+        <h1 class ="editing-screen-tittle">EDITING PROFILE</h1>
+        <button class="closebtn" id="closebtn">
+            <span>&times;</span>
+        </button>
+        <hr class ="styling-hr">
+
+        <div class ="container">        
+                <div class ="card">
+                    <img src="Userprofile/Pfp.png" alt="user-profile"> 
+                    <p id ="username">Lalisa</p>
+                    <form class="form" action="/uppic" method="post" id="formId" enctype="multipart/form-data">
+                        <label class ="pfp-btn">
+                            <input type="file" name="avatar" >
+                            Choose file
+                        </label>			
+                        
+                         <br>
+                         <input class="confirm-btn" type="submit" value="Save Changes">
+                    
+                    </form>
+                </div>
+
+                <div class ="card profile-card">
+
+                    <h3 class="tittle">Account detail</h3>
+
+                    <div class ="user-info-container row">  
+                        <div class ="col-25">                           
+                            <label for="fname">Username</label>
+                        </div>
+                        <div class="col-75">
+                            <input class ="text-box" type="text" id="username" name="username" placeholder="username">          
+                        </div>      
+                    </div>                                  
+                        
+                    <div class ="user-info-container row">
+                        <div class ="col-25">
+                            <label for="fname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input class ="text-box" type="text" id="email" name="email" placeholder="name@example.com">          
+                        </div>                                                
+                    </div>
+                    
+                    <div class ="user-info-container row">
+                        <div class ="col-25">
+                            <label for="fname">Age</label>
+                        </div>
+                        <div class="col-75">
+                            <input class ="text-box" type="number" id="age" name="age" placeholder="age">             
+                        </div>                                             
+                    </div>
+                    
+                                                      
+                </div>  
+                
+                     
+        </div>
+        
+        <hr class ="styling-hr">
+       
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* body {
+    border: 20px solid #7D9D83;
+    border-radius: 14px;
+    padding : 300px;
+    } */
+
+/* BASIC CSS */
+
+nav{
+    width: 100%;
+    background: rgb(196 227 203);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0; 
+
+}
+
+input[type = text] , input[type = number] , select{
+    width: 100%;
+    padding-left: 12px;
+}
+
+input[type = file]{
+    display: none;
+}
+
+
+input::placeholder{
+    font-weight: lighter;
+    opacity: 60%;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+}
+
+.styling-hr{
+    border-style: dotted none none;
+    border-color: #687b5f;
+    border-width: 10px;
+    width: 80%;
+    margin: 5% auto 8% auto;
+}
+
+/*TITTLE */
+.editing-screen-tittle{
+    font-family: 'Bebas Neue', cursive;
+    font-size : 3rem;
+    text-align: center;
+}
+
+.tittle{
+    font-family: 'Bebas Neue', cursive;
+    font-size : 120%;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 55%;
+    height: 40%;
+    border-radius: 50%;
+}
+
+/*CONTAINER*/
+
+.main-container{
+    position : relative;
+    margin : 100px;
+    padding: 50px;
+    border: 15px ridge rgb(196 227 203);
+    border-radius: 14px;
+    background-color: #CFEBC2;  
+    
+}
+.container{
+    margin : 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 2rem;
+}
+
+.card {
+    text-align: center;
+    font-family: arial;
+}
+
+.user-bio-container{
+    
+    border-radius: 10px;
+    text-align: center;
+} 
+
+.user-bio-container h3 , #username , .card{
+    font-family: 'Bebas Neue', cursive;
+    font-size : 2rem;
+}
+
+.user-info-container{
+    text-align: left;
+    padding : 8% 2%;
+    font-size: 90%;
+}
+
+.text-box{
+    background-color: #f9fce1;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* BUTTON */
+
+.closebtn {
+    background-color: inherit;
+    color: #7D9D83;
+    position: absolute;
+    top : 20px;
+    right : 20px;
+    font-weight:bolder;
+    font-size: 40px;
+    line-height: 50px;
+    border: none;
+    padding : 20px;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.pfp-btn , .confirm-btn{
+    margin-top: 70px;
+    padding : 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    border: 5px solid #7D9D83;
+    border-radius: 15px;
+    background-color: #F2F4E5;
+    box-shadow: 0 5px #cbcdc0;
+}
+
+.pfp-btn:hover , .confirm-btn:hover{
+    background-color: #d8dace;
+}
+
+.pfp-btn:active , .confirm-btn:active{
+    background-color: #cbcdc0;
+    box-shadow: 0 5px #a8a99f;
+    transform: translateY(4px);
+}
+
+.confirm-btn{
+    margin-top: 80px;
+}
+
+
